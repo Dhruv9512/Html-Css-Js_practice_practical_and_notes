@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .custom-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-button:hover {
+    background-color: #ddd;
+  }
+  
+  .pointer:hover {
+    cursor: pointer;
+  }
+  
+  .crosshair:hover {
+    cursor: crosshair;
+  }
+  
+  .text:hover {
+    cursor: text;
+  }
+  
+  .wait:hover {
+    cursor: wait;
+  }
+  
+  .move:hover {
+    cursor: move;
+  }
+  
+  .help:hover {
+    cursor: help;
+  }
+  

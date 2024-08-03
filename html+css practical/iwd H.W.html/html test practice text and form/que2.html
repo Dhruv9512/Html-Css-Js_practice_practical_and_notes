@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html Que 2.</title>
+</head>
+<body>
+    <!-- ----------------------------------Description list----------------------------- -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- 500 gms</dd>
+        <dt>Milk</dt>
+        <dd>- 1 ltr Tetra pack</dd>
+    </dl><br><br><br><br><br>
+    <!-- -----------------------------nested unordered list---------------------- -->
+    <p>Nested unordered list</p>
+    <ul>
+      <li>
+          DSA
+            <ul>
+               <li>Array</li>
+               <li>Linked list</li>
+               <li>stack</li>
+               <li>Queue</li>
+           </ul>
+      </li>    
+      <li>
+          Web Technologies
+            <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+          </ul>
+      </li>    
+  </ul><br><br><br><br><br>
+
+  <!-- ------------------------------------Table Form---------------------------- -->
+  <table border="1">
+        <tr >
+            <th bgcolor="periwinkle Blue">Name</th>
+            <th bgcolor="periwinkle Blue">Value</th>
+        </tr>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><label for="gen">sex</label></td>
+            <td rowspan="2"> <label for="Male"><input type="radio" id="Male" name="sex">Male</label><br>
+             <label for="Female"><input type="radio" id="Female" name="sex">Female</label></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><label for="color">Eye color</label></td>
+            <td>
+                <select  id="color">
+                    <option value="green">green</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="check">Check all that apply</label></td>
+            <td> <label for="check"><input type="checkbox" id="check" name="feet">Over 6 feet tall</label> <br>
+            <label for="check1"> <input type="checkbox" id="check1" name="pounds">Over 200 pounds</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">
+                <label for="ability">Decribe your athletic ability: <br>
+                <textarea name="ability" id="ability" cols="40" rows="10"></textarea>
+                </label>
+            </td>
+            <tr>
+            </tr>
+           <tr>
+            <td colspan="2" rowspan="2" align="center">
+                <button>Enter my information</button>
+            </td>
+           </tr>
+        </tr>
+  </table>
+</body>
+</html>

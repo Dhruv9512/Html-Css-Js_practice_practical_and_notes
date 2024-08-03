@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  height: 5rem;
+  background-color: rgb(11, 7, 26);
+}
+
+.heading h1 {
+  color: white;
+  line-height: 5rem;
+  text-align: center;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 2.5em;
+}
+
+.game_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  font-size: 5vw;
+}
+
+.status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.4em;
+  gap: 100px;
+  height: 10vmin;
+}
+
+.status :nth-child(1) {
+  text-align: center;
+}
+
+.show-play {
+  width: 100%;
+  height: calc(100vh - 10vmin - 65vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  font-size: 5vw;
+}
+.image {
+  width: 12vw;
+  border-radius: 1.2em;
+  border: 5px solid rgba(255, 0, 0, 0.458);
+  opacity: 0.5;
+}
+.image2{
+  width: 12vw;
+  border-radius: 1.2em;
+  border: 5px solid rgba(255, 0, 0, 0.458);
+  opacity: 1;
+}
+.show-play h1 {
+  font-size: 0.8em;
+}
+
+/* ---------------------print_winner-------------------- */
+.winner_draw {
+  width: 20%;
+  height: 5vh;
+  border: 4px solid black;
+  background-color: rgba(241, 168, 33, 0.921);
+  border-radius: 2vw;
+  color: aliceblue;
+  font-size: 1.6vw;
+  text-align: center;
+  animation: draw 2s;
+  
+}
+@keyframes draw {
+  0% {
+    scale: 0.5;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+.winner_win {
+  width: 20%;
+  height: 5vh;
+  border: 4px solid black;
+  border-radius: 2vw;
+  color: aliceblue;
+  font-size: 1.6vw;
+  background-color: rgba(31, 201, 31, 0.821);
+  text-align: center;
+  animation: win 2s;
+  
+}
+
+@keyframes win {
+  0% {
+    scale: 0.5;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+
+.winner_loss {
+  width: 20%;
+  height: 5vh;
+  border: 4px solid black;
+  border-radius: 2vw;
+  color: aliceblue;
+  font-size: 1.6vw;
+  background-color: rgba(242, 37, 37, 0.947);
+  text-align: center;
+  animation: loss 2s;
+ 
+}
+@keyframes loss {
+  0% {
+   scale: 0.5;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+
+.choose {
+  gap: 20px;
+}
+.choose img {
+  margin: 0;
+  width: 6vw;
+  border-radius: 1.2em;
+  border: 4px solid rgba(255, 0, 0, 0.458);
+  opacity: 0.8;
+}
+.choose img:hover {
+  width: 7vw;
+  box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.458);
+  opacity: 1;
+}
+
+.choose h3 {
+  font-size: 0.4em;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  color: rgb(37, 35, 35);
+}
+
+@media (max-width: 1500px) {
+  .game_container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    font-size: 5vw;
+  }
+  .heading h1 {
+    color: white;
+    line-height: 5rem;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.8px;
+    font-size: 1.8em;
+  }
+
+  .image{
+    width: 26vw;
+    border-radius: 1.2em;
+    border: 5px solid rgba(255, 0, 0, 0.458);
+    opacity: 0.5;
+  }
+  .image2{
+    width: 26vw;
+    border-radius: 1.2em;
+    border: 5px solid rgba(255, 0, 0, 0.458);
+    opacity: 1;
+  }
+
+  .show-play h1 {
+    font-size: 1.5em;
+  }
+
+  .status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 100px;
+    height: 10vmin;
+  }
+
+  .winner_draw {
+    width: 40%;
+    height: 4vh;
+    border: 4px solid black;
+    background-color: rgba(241, 168, 33, 0.921);
+    border-radius: 2vw;
+    color: aliceblue;
+    font-size: 4vw;
+    line-height: 3vh;
+    text-align: center;
+    animation: draw 2s;
+  }
+
+  .winner_win {
+    width: 50%;
+    height: 4vh;
+    border: 4px solid black;
+    border-radius: 2vw;
+    color: aliceblue;
+    font-size: 4vw;
+    background-color: rgba(31, 201, 31, 0.821);
+    text-align: center;
+    line-height: 3vh;
+    animation: win 2s;
+  }
+
+  .winner_loss {
+    width: 40%;
+    height: 4vh;
+    border: 4px solid black;
+    border-radius: 2vw;
+    color: aliceblue;
+    font-size: 4vw;
+    background-color: rgba(242, 37, 37, 0.947);
+    text-align: center;
+    line-height: 3vh;
+    animation: loss 2s;
+  }
+
+  .choose h3 {
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 600;
+    color: rgb(37, 35, 35);
+  }
+
+  .choose img{
+    margin-left: 6%;
+    width: 12vw;
+    border-radius: 1.2em;
+    border: 4px solid rgba(255, 0, 0, 0.458);
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  .choose img:hover {
+    width: 18vw;
+    box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.458);
+    opacity: 1;
+  }
+
+  .choose {
+    gap: 10px;
+    height: 10em;
+  }
+}

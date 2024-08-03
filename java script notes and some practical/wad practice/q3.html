@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let a=258
+        
+        let ans=0
+        
+        while(a!==0){
+            let temp = a%10
+            console.log(temp);
+            ans=(ans*10)+temp
+            console.log(temp);
+            a=a/10
+            a= Math.floor(a)
+        }
+        document.write(ans) 
+    </script>
+</body>
+</html>

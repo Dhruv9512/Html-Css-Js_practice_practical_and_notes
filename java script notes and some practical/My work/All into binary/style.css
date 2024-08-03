@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(242, 183, 107), rgb(135, 206, 235), rgb(255, 182, 193));
+    font-size: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 5s ease-in-out;
+}
+
+table {
+    width: 12em;
+    height: 8em;
+    border: 0.1em solid black;
+    border-radius: 5%;
+    font-size: 0.1em;
+    background-color: rgb(255, 255, 255, 0.8); /* Optional: semi-transparent white */
+}
+
+input {
+    font-size: 0.35em;
+    padding: 1%;
+    border: 0.2em solid black;
+    border-radius: 10%;
+    background-color: aliceblue;
+}
+
+select {
+    font-size: 0.5em;
+    border: 0.15em solid black;
+    border-radius: 10%;
+}
+
+.text {
+    font-size: 60%;
+    padding-left: 50px;
+}
+
+td {
+    padding-left: 5%;
+}
+
+.btn-sml {
+    font-size: 0.55em;
+    text-align: center;
+    border: 0.13em solid black;
+    border-radius: 6%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1200px) {
+    table {
+        width: 11em;
+        height: 15em;
+        border: 0.2em solid black;
+        border-radius: 5%;
+        font-size: 0.2em;
+    }
+
+    select {
+        width: 5em;
+        font-size: 0.9em;
+        border: 0.15em solid black;
+        border-radius: 10%;
+    }
+
+    .text {
+        font-size: 100%;
+        padding-left: 20px;
+    }
+
+    td {
+        padding-left: 5%;
+    }
+
+    input {
+        width: 40vw;
+        font-size: 0.5em;
+        padding: 2%;
+        border: 0.3em solid black;
+        border-radius: 10%;
+        background-color: aliceblue;
+    }
+
+    .btn-sml {
+        font-size: 0.95em;
+        text-align: center;
+        border: 0.13em solid black;
+        border-radius: 8%;
+        margin-left: 1%;
+    }
+}

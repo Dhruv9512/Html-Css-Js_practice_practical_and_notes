@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+video{
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+    
+   
+}
+#center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contain{
+   width: 60%;
+    height: 20%;
+    border: 4px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+}
+h1{
+   font-size: 3em;
+   color: aliceblue;
+   transform: skew(360deg);
+}
+
+
+
+@keyframes h1{
+    
+    0%{ 
+        opacity: 0;
+        transform: rotateY(0deg);
+       }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        text-shadow: 2px 2px 40px red;
+    }
+   
+  
+}
+#h2{
+    animation: h2 4s;
+}
+@keyframes h2{
+    0%{ 
+        opacity: 0;
+        transform: rotateY(0deg);
+       }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        text-shadow: 2px 2px 40px red;
+    }
+   
+   
+}
+
+@keyframes h3{
+    0%{ 
+        opacity: 0;
+        transform: rotateY(0deg);
+       }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        text-shadow: 2px 2px 40px red;
+    }
+   
+  
+}
+
+@keyframes h4{
+    
+    0%{ 
+        opacity: 0;
+        transform: rotateY(0deg);
+       }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        text-shadow: 2px 2px 40px red;
+    }
+
+}
+
+@keyframes h5{
+   0%{
+    opacity: 0;
+    transform: rotateY(0deg);
+   }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        text-shadow: 2px 2px 40px red;
+    }
+   
+   
+}

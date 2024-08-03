@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*          ---------------------------------------Nave bar--------------------------------------------*/
+
+
+.navebar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Nave left side contain list and logo */
+.nave-left {
+width: 50%;
+
+}
+
+.nave-left ul{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+}
+.nave-left ul li{
+        list-style: none;
+}
+
+#logo{
+    width: 20rem;
+    border-radius: 50%;
+
+}
+.nave-left ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 2.5em;
+   transition: 0.7s;
+}
+
+.nave-left ul li a:hover{  
+   color: gray;
+}
+
+ /* Nave left side contain search bar */
+.nav-right{
+    width: 50%;
+    text-align: right;
+    
+    padding: 8em;
+    
+}
+#search{
+    border: 5px solid orange;
+    font-size: 2em;
+    border-radius: 9%;
+    
+}
+.btn-sml{
+    font-size: 2rem;
+    border-radius: 20%;
+    color: white;
+    background-color: orange;
+    cursor:pointer;
+}
+
+    /* --------------------------Background image---------------------------------- */
+
+.bg-image{
+    background:  rgba(0,0,0,0.7)  url(../img/bg.jpg)  ;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+     /* -------------------------------center contain/ welcome part ----------------------- */
+
+.section1{
+    width: 100vw;
+    height: 100vh;
+}
+
+.part1_text-button{
+     width: 100%;
+     height: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: start;
+     flex-direction: column;
+     padding-top: 10%;
+     padding-left: 10%;
+}
+.wlc_text{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login{
+    font-size: 4em;
+}
+.btn_login{
+    font-size: 2rem;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 18%;
+}
